@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dynamo Slider Control</title>
+    <link rel="stylesheet" href="/css/main.css" />
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/script.js"></script>
+  </head>
+  <body>
+
+<div class = "center">
+   
+    <div class="value" id="value1">X-axis : 0</div>
+    <input type="range" min="0" max="82000" step="500" value="0" id="myRange1" />    
+   
+    <div class="value" id="value2">Y-axis : 0</div>
+    <input type="range" min="0" max="62000" step="500" value="0" id="myRange2" />    
+
+    <div class="value" id="value3">Rotate : 0</div>
+    <input type="range" min="-360" max="360" step="10" value="0" id="myRange3" /> 
+
+    <div class="value" id="value4">Boom Angle : 0</div>
+    <input type="range" min="0" max="60" step="3" value="0" id="myRange4" /> 
+
+     <div class="value" id="value5">Swing Angle : 0</div>
+    <input type="range" min="-360" max="360" step="10" value="0" id="myRange5" /> 
+
+    <br><br><br><br>
+
+    <label class="switch">
+    <input type="checkbox" id="light1" onclick = "Light1()"> <div class="slider round"></div>      
+     <span class="span">Use Jig</span>    
+    </label><br><br><br><br><br>
+
+    <label class="switch">
+    <input type="checkbox" id="light2" onclick = "Light2()"> <div class="slider round"></div>      
+     <span class="span">When Driving</span>    
+    </label><br><br><br><br><br>
+
+    </div>
+
+  </body>
+</html>
